@@ -1,5 +1,5 @@
 {% set name = "ogstools" %}
-{% set version = "0.0.3" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ogstools-{{ version }}.tar.gz
-  sha256: 367a515b0ba7266ff1a2b013b7767e5376ecf33035a378163c9d06d57cc34569
+  sha256: 8502fda985f789243787afbf4e75db6eda7aa04a94b806c1ecd1f8430d1c9043
 
 build:
   entry_points:
