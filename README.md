@@ -1,11 +1,11 @@
-About ogstools
-==============
+About ogstools-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ogstools-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/ogstools/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ogstools-feedstock/blob/main/LICENSE.txt)
 
 Summary: A collection of Python tools aimed at evolving into a modeling toolchain around OpenGeoSys.
 
