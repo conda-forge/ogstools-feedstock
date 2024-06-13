@@ -24,16 +24,35 @@ requirements:
     - pip
   run:
     - python >=3.9
-    - meshio >=5.3.0
+      # TODO: create conda-forge packages:
+      #- ogs
+      #- ogs6py
+      #- vtuinterface
+    - meshio ==5.3.4
+    - jupytext
+    - matplotlib
+    - nbconvert
+    - pandas
+    - papermill
+    - pillow
+    - pint
+    - pyvista
+    - scipy
+    - tqdm
+    - typeguard
 
 test:
   imports:
     - ogstools
   commands:
-    - pip check
+    #- pip check
     - msh2vtu --help
+    - pytest
   requires:
     - pip
+    - pytest
+  source_files:
+    - tests
 
 about:
   home: https://pypi.org/project/ogstools/
