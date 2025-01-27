@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "ogstools" %}
 {% set version = "0.4.0" %}
 
@@ -6,22 +7,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ogstools-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ogstools-{{ version }}.tar.gz
   sha256: 55c2d56050140c18941d8c4cad219bd4f9c25226e2c51333247d43fa885c3a6c
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - setuptools
     - setuptools-scm
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - python-gmsh >=4.12.0
     - h5py >=3.8.0
     - jupytext >=1.14.0
@@ -38,6 +39,8 @@ requirements:
     - lxml >=4.6.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - ogstools
   commands:
