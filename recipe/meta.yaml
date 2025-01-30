@@ -33,9 +33,10 @@ requirements:
     - pint >=0.22
     - papermill >=2.4.0
     - pandamesh >=0.2.1
-    - ogs >=6.5.3
     - typeguard >=4.0.0
     - lxml >=4.6.0
+    - ogs >=6.5.4
+    - pandas >=2.2.3
 
 test:
   imports:
