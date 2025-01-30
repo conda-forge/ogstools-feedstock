@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "ogstools" %}
 {% set version = "0.5.0" %}
 
@@ -12,16 +13,16 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - setuptools
     - setuptools-scm
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - python-gmsh >=4.12.0
     - h5py >=3.8.0
     - jupytext >=1.14.0
@@ -39,6 +40,8 @@ requirements:
     - pandas >=2.2.3
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - ogstools
   commands:
