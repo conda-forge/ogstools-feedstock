@@ -1,13 +1,13 @@
 {% set name = "ogstools" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ogstools-{{ version }}.tar.gz
-  sha256: 55c2d56050140c18941d8c4cad219bd4f9c25226e2c51333247d43fa885c3a6c
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ogstools-{{ version }}.tar.gz
+  sha256: 935040fee60b41351395577e3560f62edcf1fd8fbf9cb06d0776293fe5cb2b42
 
 build:
   noarch: python
@@ -33,9 +33,10 @@ requirements:
     - pint >=0.22
     - papermill >=2.4.0
     - pandamesh >=0.2.1
-    - ogs >=6.5.3
     - typeguard >=4.0.0
     - lxml >=4.6.0
+    - ogs >=6.5.4
+    - pandas >=2.2.3
 
 test:
   imports:
