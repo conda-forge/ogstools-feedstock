@@ -145,6 +145,3 @@ Feedstock Maintainers
 
 * [@bilke](https://github.com/bilke/)
 
-
-<!-- dummy commit to enable rerendering -->
-
