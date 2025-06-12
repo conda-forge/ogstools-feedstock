@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "ogstools" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ogstools-{{ version }}.tar.gz
-  sha256: a5c3930e72b295c0ad61b6aceb42e37e889b798e4b7543b91f064325b082495f
+  sha256: 9beb1c242c1272f4d4eab87fa458e97c269000fdc5fb087fcdafbfa4c1f3745c
 
 build:
   noarch: python
