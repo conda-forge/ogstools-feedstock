@@ -38,6 +38,7 @@ requirements:
     - lxml >=4.6.0
     - ogs >=6.5.4
     - pandas >=2.2.3
+    - psutil >=6.0.0
 
 test:
   requires:
