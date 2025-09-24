@@ -39,6 +39,7 @@ requirements:
     - ogs >=6.5.4
     - pandas >=2.2.3
     - psutil >=6.0.0
+    - simpleeval >=1.0.3
 
 test:
   requires:
