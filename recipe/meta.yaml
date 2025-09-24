@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "ogstools" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ogstools-{{ version }}.tar.gz
-  sha256: 9beb1c242c1272f4d4eab87fa458e97c269000fdc5fb087fcdafbfa4c1f3745c
+  sha256: 593d2ed22d254419abe7e806782379f84b12a7dfc3425ec8939add12e603d120
 
 build:
   noarch: python
@@ -39,6 +39,7 @@ requirements:
     - ogs >=6.5.4
     - pandas >=2.2.3
     - psutil >=6.0.0
+    - simpleeval >=1.0.3
 
 test:
   requires:
