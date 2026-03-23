@@ -1,6 +1,6 @@
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 {% set name = "ogstools" %}
-{% set version = "0.7.1" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ogstools-{{ version }}.tar.gz
-  sha256: 593d2ed22d254419abe7e806782379f84b12a7dfc3425ec8939add12e603d120
+  sha256: 45df5febea94ca5ee39c4f2dee3a57929f609d86f1a3badd9499256cd9a288dc
 
 build:
   noarch: python
@@ -28,18 +28,20 @@ requirements:
     - jupytext >=1.14.0
     - matplotlib-base >=3.7.1
     - meshio >=5.3.0
-    - pyvista >=0.40.1
-    - numpy >=1.20.0,<2.1
+    - pyvista >=0.47.0
+    - numpy >=1.20.0
     - scipy >=1.10.1
     - pint >=0.22
     - papermill >=2.4.0
     - pandamesh >=0.2.1
     - typeguard >=4.0.0
     - lxml >=4.6.0
-    - ogs >=6.5.4
+    - ogs >=6.5.7
     - pandas >=2.2.3
     - psutil >=6.0.0
     - simpleeval >=1.0.3
+    - vtk >=9.4.0
+    - shapely >=2.0.0
 
 test:
   requires:
