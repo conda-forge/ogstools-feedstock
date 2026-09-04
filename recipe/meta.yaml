@@ -1,14 +1,14 @@
 {% set python_min = "3.11" %}
 {% set name = "ogstools" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ogstools-{{ version }}.tar.gz
-  sha256: 2215004a4e158cc24d647707d32142fcf849cbf1077c18e1182ba27f69cbc561
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/ogstools-{{ version }}.tar.gz
+  sha256: 317606a499ff9c8f1c8e9bc0cb62c73439e108ec5bd023fcbdcefde9186cfae9
 
 build:
   noarch: python
